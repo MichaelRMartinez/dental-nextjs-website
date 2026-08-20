@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { servicesSecItems } from "@/data/data";
+import ServicesCard from "@/components/ServicesCard";
 
 export default function Home() {
   return (<>
   
   {/* HERO */}
   <section className="pt-32 relative">
-    <div className="container grid gap-16 space-y-10 sm:space-y-0 lg:grid-cols-2 lg:items-end ">
+    <div className="container grid gap-16 space-y-10 sm:space-y-0 lg:grid-cols-2 lg:items-end">
       {/* CONTENT */}
       <div className="max-w-xl md:max-w-2xl lg:max-w-none my-auto pb-10">
         <p className="subtitle">Smile with Confidence</p>
@@ -33,6 +35,32 @@ export default function Home() {
 
     {/* SHAPE */}
     <Image src={'images/shape-1.svg'} alt="" width={200} height={200} className="absolute top-28 -left-8 -z-10"/>
+  </section>
+
+    
+  {/* SERVICES */}
+  <section className="section">
+    <div className="container">
+
+      {/* TITLE */}
+      <div className="flex gap-6 flex-wrap items-center justify-between">
+        <div>
+          <p className="subtitle">Services</p>
+          <h2 className="title max-w-md">
+            Advanced Dental Care for Healthier Smiles
+          </h2>
+        </div>
+        <Link href={"/services"} className="primary-btn uppercase">View all</Link>
+      </div>
+
+      {/* WRAPPER */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+        {servicesSecItems.map((item) => (
+          <ServicesCard key={item.id} {...item} />
+        ))}
+      </div>
+    
+    </div>
   </section>
 
   </>);
