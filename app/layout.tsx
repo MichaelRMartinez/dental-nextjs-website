@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={dmSans.className}>
-      <body className="min-h-full flex flex-col">
+    <html lang="en">
+      <body className={dmSans.className}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />  
