@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { servicesSecItems } from "@/data/data";
 import ServicesCard from "@/components/ServicesCard";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (<>
@@ -92,6 +93,11 @@ export default function Home() {
       </div>
 
     </div>
+  </section>
+
+  {/* TESTIMONIALS */}
+  <section className="section">
+    <Testimonials />
   </section>
   </>);
 }
