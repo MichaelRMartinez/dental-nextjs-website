@@ -63,5 +63,35 @@ export default function Home() {
     </div>
   </section>
 
+  {/* ABOUT */}
+  <section className="py-20 bg-primary-100/25 mt-20 relative">
+    <div className="container grid gap-14 lg:grid-cols-2 lg:items-center">
+
+      {/* CONTENT */}
+      <div className="lg:order-1 space-y-1.5">
+        <p className="subtitle">About Us</p>
+        <h2 className="title">Serving Our Community with 15 Years of Experience</h2>
+        <p className="mt-4 mb-8">Lorem ipsum dolor sit amet consectetur. Amet platea egestas aliquam habitant. Hac urna a rhoncus venenatis arcu. Felis elit posuere ornare massa pellentesque quam porta. Amet dolor nisi vehicula consectetur sed aliquet ut faucibus gravida. Ultricies a sem magna feugiat nisl mi a.</p>
+
+        <div className="flex items-center mb-10 gap-6">
+          <span className="rounded-full overflow-hidden ring ring-primary-500 aspect-square">
+            <Image src={'/images/about-sm-img.png'} alt="Dr. Smith Moore" width={80} height={80}/>
+          </span>
+          <div className="space-y-0.5">
+            <h2 className="card-title">Dr. Smith Moore</h2>
+            <p>Dentist at Global Dentistry</p>
+          </div>
+        </div>
+
+        <Link href={'/about'} className="primary-btn uppercase">LEARN MORE</Link>
+      </div>
+
+      {/* IMAGE */}
+      <div className="max-w-max mx-auto">
+        <Image src={"/images/about-section-img.png"} width={512} height={512} alt="dentist performing a routine cleanup"/>
+      </div>
+
+    </div>
+  </section>
   </>);
 }
