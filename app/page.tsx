@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { servicesSecItems } from "@/data/data";
+import { servicesSecItems, blogSecItems } from "@/data/data";
 import ServicesCard from "@/components/ServicesCard";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
+import BlogCard from "@/components/BlogCard";
 
 export default function Home() {
   return (<>
@@ -104,6 +105,25 @@ export default function Home() {
   {/* CTA */}
   <section className="section">
     <CTA />
+  </section>
+
+  {/* BLOG */}
+  <section className="section">
+    <div className="container">
+      
+      {/* TITLE */}
+      <div>
+        <p className="subtitle">Resources</p>
+        <h2 className="title">Articles, Tips & Insights on Dental Care</h2>
+      </div>
+
+      {/* WRAPPER */}
+      <div className="grid mt-11 lg:mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {blogSecItems.map((item) => (
+          <BlogCard key={item.id} {...item} />
+        ))}
+      </div>
+    </div>
   </section>
 
   </>);

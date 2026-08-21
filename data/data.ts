@@ -90,21 +90,21 @@ export const blogSecItems = [
     img: "/images/blog-1.png",
     title: "4 things to consider before getting teeth braces",
     text: "Lorem ipsum dolor sit amet consectetur. Eget ligula pharetra vulputate ac dictumst. Lacus vitae diam.",
-    date: "september 1,2024",
+    date: "September 1, 2024",
   },
   {
     id: 2,
     img: "/images/blog-2.png",
     title: "How often should i replace my toothbrush?",
     text: "Lorem ipsum dolor sit amet consectetur. Eget ligula pharetra vulputate ac dictumst. Lacus vitae diam.",
-    date: "september 1,2025",
+    date: "September 1, 2025",
   },
   {
     id: 3,
     img: "/images/blog-3.png",
     title: "6 great tips to keep your teeth healthly and save",
     text: "Lorem ipsum dolor sit amet consectetur. Eget ligula pharetra vulputate ac dictumst. Lacus vitae diam.",
-    date: "October 31,2024",
+    date: "October 31, 2024",
   },
 ];
 
